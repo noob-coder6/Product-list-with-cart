@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="products">
+      <h1 class="products__title">Desserts</h1>
+      <div class="products__list">
+        <!-- Products will be injected here by JavaScript -->
+      </div>
+    </section>
+    <aside class="cart">
+      <h2 class="cart__title">Your Cart (<span class="cart__quantity">0</span>)</h2>
+      <div class="cart__content">
+        <div class="cart__empty">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="Empty cart illustration">
+          <p>Your added items will appear here</p>
+        </div>
+        <div class="cart__items">
+          <!-- Cart items will be injected here -->
+        </div>
+        <div class="cart__summary">
+          <!-- Cart summary will be injected here -->
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <div class="modal" hidden>
+    <div class="modal__content">
+      <img src="./assets/images/icon-order-confirmed.svg" alt="Order confirmed" class="modal__icon">
+      <h2 class="modal__title">Order Confirmed</h2>
+      <p class="modal__text">We hope you enjoy your food!</p>
+      <div class="modal__summary">
+        <!-- Modal summary will be injected here -->
+      </div>
+      <button class="modal__new-order-btn">Start New Order</button>
+    </div>
+  </div>
+
+</body>
+</html>
